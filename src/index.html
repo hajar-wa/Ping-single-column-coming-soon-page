@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META INFO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper display on all devices -->
+  
+  <!-- STYLESHEETS -->
+  <link href="./output.css" rel="stylesheet">
+  
+  <!-- ICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- CUSTOM STYLES -->
+  <style>
+    *{
+      overflow-x:hidden;
+    }
+    .placeholder-sm::placeholder {
+      font-size: 0.8rem; 
+      color: hsl(0, 0%, 59%); 
+    }
+  </style>
+  
+  <title>Frontend Mentor | Ping Coming Soon Page</title>
+</head>
+<body class="font-libre-franklin bg-gray-100">
+  <main class="w-full mx-auto text-center max-w-lg">
+    <img class="mx-auto my-14" src="../images/logo.svg" alt="logo">
+    
+    <!-- MAIN HEADING -->
+    <h1 class="text-2xl text-grey my-4">
+      We are launching <span class="text-black font-bold">soon!</span>
+    </h1>
+    
+    <!-- SUBHEADING -->
+    <p class="text-gray-700 my-8">Subscribe and get notified</p>
+    
+    <!-- INPUT SECTION -->
+    <div id="input-div" class="flex flex-col items-center gap-4 md:flex-row md:gap-2 mx-4 md:mx-12">
+      <input
+        class="border-2 border-paleblue rounded-full w-4/5 md:w-3/4 px-4 py-2 placeholder-sm"
+        type="email" 
+        placeholder="Your email address..." 
+        required 
+        id="email"
+        for="email"
+      />
+      <button 
+        type="submit"
+        id="submit"
+        class="bg-blue text-white w-4/5 md:w-1/4 py-2 rounded-full shadow-[1px_1px_1px_grey] hover:bg-white hover:text-blue hover:border border-blue"
+      >
+        Notify Me
+      </button>
+      <!-- RESPONSE MESSAGE DIV -->
+      <div id="btn-response" class="block"></div>
+
+    </div>
+    
+    <img src="../images/illustration-dashboard.png" alt="illustration-dashboard" class="mt-14 mb-8 mx-auto">
+    
+    <!-- ICONS  -->
+    <div class="flex justify-center gap-4 mt-8 mb-4">
+      <a href="#">
+        <i class="text-blue border-2 border-blue rounded-full p-2.5 fab fa-facebook-f hover:bg-blue hover:text-white hover:shadow-[1px_1px_1px_blue]"></i>
+      </a>
+      <a href="#">
+        <i class="text-blue border-2 border-blue rounded-full p-2.5 fab fa-twitter hover:bg-blue hover:text-white hover:shadow-[1px_1px_1px_blue]"></i>
+      </a>
+      <a href="#">
+        <i class="text-blue border-2 border-blue rounded-full p-2.5 fab fa-instagram hover:bg-blue hover:text-white hover:shadow-[1px_1px_1px_blue]"></i>
+      </a>
+    </div>
+    
+    <p class="text-grey text-sm mb-8">&copy; Copyright Ping. All rights reserved.</p>
+  </main>
+</body>
+
+<script type="module" src="./index.js"></script>
+</html>
+
